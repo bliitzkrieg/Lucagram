@@ -17,3 +17,6 @@
 /tmp
 
 /.vagrant
+
+# Ignores Application uploaded photos
+/public/system
