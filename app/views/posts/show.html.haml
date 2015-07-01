@@ -8,4 +8,6 @@
     %p.caption
       =@post.caption
     .text-center
+      =link_to "Edit", post_path(@post), method: :delete
+      |
       =link_to "Cancel", posts_path

@@ -23,6 +23,9 @@
             = link_to "Login", '#'
           %li
             = link_to "Register", '#'
-    = yield
+    .container
+      -flash.each do |name, msg|
+        = content_tag :div, msg, class: [:alert, alert_for(name)]
+      = yield
   </body
 </html
